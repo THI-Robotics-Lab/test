@@ -1,0 +1,12 @@
+{
+  "package_name": "turtlebot3_msgs",
+  "non_idl_tuples": [
+    "/home/asser/test/turtlebot_ws/src/turtlebot3_msgs:msg/SensorState.msg",
+    "/home/asser/test/turtlebot_ws/src/turtlebot3_msgs:msg/Sound.msg",
+    "/home/asser/test/turtlebot_ws/src/turtlebot3_msgs:msg/VersionInfo.msg",
+    "/home/asser/test/turtlebot_ws/src/turtlebot3_msgs:srv/Sound.srv",
+    "/home/asser/test/turtlebot_ws/src/turtlebot3_msgs:srv/Dqn.srv",
+    "/home/asser/test/turtlebot_ws/src/turtlebot3_msgs:srv/Goal.srv",
+    "/home/asser/test/turtlebot_ws/src/turtlebot3_msgs:action/Patrol.action"
+  ]
+}

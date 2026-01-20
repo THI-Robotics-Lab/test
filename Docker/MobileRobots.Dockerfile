@@ -98,7 +98,6 @@ RUN apt update -y && apt install -y \
     python3-colcon-common-extensions \
     git
 
-<<<<<<< HEAD
 # Create workspace
 RUN mkdir -p /home/turtlebot3_ws/src
 WORKDIR /home/turtlebot3_ws/src
@@ -125,13 +124,3 @@ RUN echo "source /home/turtlebot3_ws/install/setup.bash" >> /root/.bashrc
 # Clone Main Lab Repo 
 WORKDIR /home/
 RUN git clone https://github.com/THI-Robotics-Lab/Mobile-Robots-Practical-Lab.git
-=======
-# Source Turtlebot configurations
-RUN echo "export TURTLEBOT3_MODEL=waffle" >> /root/.bashrc
-RUN echo "source /usr/share/gazebo/setup.sh" >> /root/.bashrc
-    
-WORKDIR /home
-
-
-
->>>>>>> 02f96b1 (Test)

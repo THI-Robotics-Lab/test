@@ -1,0 +1,81 @@
+[0.063s] Invoking command in '/home/asser/test/turtlebot_ws/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/asser/test/turtlebot_ws/src/turtlebot3_msgs -DCMAKE_INSTALL_PREFIX=/home/asser/test/turtlebot_ws/install/turtlebot3_msgs
+[0.482s] -- The C compiler identification is GNU 11.4.0
+[0.737s] -- The CXX compiler identification is GNU 11.4.0
+[0.945s] -- Detecting C compiler ABI info
+[1.113s] -- Detecting C compiler ABI info - done
+[1.128s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.128s] -- Detecting C compile features
+[1.129s] -- Detecting C compile features - done
+[1.134s] -- Detecting CXX compiler ABI info
+[1.332s] -- Detecting CXX compiler ABI info - done
+[1.348s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.349s] -- Detecting CXX compile features
+[1.350s] -- Detecting CXX compile features - done
+[1.354s] -- Found action_msgs: 1.2.2 (/opt/ros/humble/share/action_msgs/cmake)
+[1.966s] -- Found Python3: /home/asser/miniconda3/bin/python3 (found version "3.13.9") found components: Interpreter 
+[2.337s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.340s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.354s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.390s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.426s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.512s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.531s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[2.560s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.725s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[2.725s]   execute_process(/home/asser/miniconda3/bin/python3 -m rosidl_adapter
+[2.726s]   --package-name turtlebot3_msgs --arguments-file
+[2.726s]   /home/asser/test/turtlebot_ws/build/turtlebot3_msgs/rosidl_adapter__arguments__turtlebot3_msgs.json
+[2.726s]   --output-dir
+[2.726s]   /home/asser/test/turtlebot_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs
+[2.726s]   --output-file
+[2.726s]   /home/asser/test/turtlebot_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs.idls)
+[2.727s]   returned error code 1:
+[2.727s] 
+[2.727s]   AttributeError processing template 'msg.idl.em'
+[2.727s] 
+[2.727s]   Traceback (most recent call last):
+[2.727s] 
+[2.727s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/resource/__init__.py", line 48, in evaluate_template
+[2.728s]       _interpreter = em.Interpreter(
+[2.728s]                      ^^^^^^^^^^^^^^
+[2.732s] 
+[2.732s]   AttributeError: module 'em' has no attribute 'Interpreter'
+[2.732s] 
+[2.732s]   
+[2.733s] 
+[2.733s]   During handling of the above exception, another exception occurred:
+[2.733s] 
+[2.734s]   
+[2.734s] 
+[2.734s]   Traceback (most recent call last):
+[2.734s] 
+[2.734s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[2.734s]     File "<frozen runpy>", line 88, in _run_code
+[2.734s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[2.734s]       sys.exit(main())
+[2.735s]                ~~~~^^
+[2.735s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[2.735s]       abs_idl_file = convert_to_idl(
+[2.735s]           pathlib.Path(basepath), args.package_name,
+[2.735s]           pathlib.Path(relative_path), output_dir)
+[2.735s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[2.736s]       return convert_msg_to_idl(
+[2.736s]           package_dir, package_name, interface_file, output_dir / 'msg')
+[2.736s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 39, in convert_msg_to_idl
+[2.736s]       expand_template('msg.idl.em', data, output_file, encoding='iso-8859-1')
+[2.736s]       ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2.736s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/resource/__init__.py", line 23, in expand_template
+[2.736s]       content = evaluate_template(template_name, data)
+[2.736s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/resource/__init__.py", line 69, in evaluate_template
+[2.737s]       _interpreter.shutdown()
+[2.737s]       ^^^^^^^^^^^^^^^^^^^^^
+[2.738s] 
+[2.738s]   AttributeError: 'NoneType' object has no attribute 'shutdown'
+[2.738s] 
+[2.738s] Call Stack (most recent call first):
+[2.738s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[2.738s]   CMakeLists.txt:47 (rosidl_generate_interfaces)
+[2.739s] 
+[2.739s] [0m
+[2.739s] -- Configuring incomplete, errors occurred!
+[2.739s] See also "/home/asser/test/turtlebot_ws/build/turtlebot3_msgs/CMakeFiles/CMakeOutput.log".

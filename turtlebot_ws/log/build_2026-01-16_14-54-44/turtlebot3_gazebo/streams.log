@@ -1,0 +1,54 @@
+[0.056s] Invoking command in '/home/asser/test/turtlebot_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/asser/test/turtlebot_ws/src/turtlebot3_simulations/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/home/asser/test/turtlebot_ws/install/turtlebot3_gazebo
+[0.452s] -- The C compiler identification is GNU 11.4.0
+[0.620s] -- The CXX compiler identification is GNU 11.4.0
+[0.789s] -- Detecting C compiler ABI info
+[0.937s] -- Detecting C compiler ABI info - done
+[0.948s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.948s] -- Detecting C compile features
+[0.949s] -- Detecting C compile features - done
+[0.954s] -- Detecting CXX compiler ABI info
+[1.112s] -- Detecting CXX compiler ABI info - done
+[1.124s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.124s] -- Detecting CXX compile features
+[1.125s] -- Detecting CXX compile features - done
+[1.141s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.927s] -- Found Python3: /home/asser/miniconda3/bin/python3 (found version "3.13.9") found components: Interpreter 
+[2.135s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[2.135s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[2.135s]   does not match the name of the calling package (gazebo).  This can lead to
+[2.135s]   problems in calling code that expects `find_package` result variables
+[2.135s]   (e.g., `_FOUND`) to follow a certain pattern.
+[2.135s] Call Stack (most recent call first):
+[2.135s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[2.135s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[2.135s]   CMakeLists.txt:23 (find_package)
+[2.135s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.135s] [0m
+[2.135s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[2.149s] -- Checking for module 'bullet>=2.82'
+[2.170s] --   Found bullet, version 3.05
+[2.367s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[2.448s] -- Found assimp: /usr/include (found version "5.2.0") 
+[2.492s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[3.103s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[3.667s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[3.677s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.692s] -- Searching for dependencies of ignition-math6
+[3.696s] -- Looking for OGRE...
+[3.696s] -- OGRE_PREFIX_WATCH changed.
+[3.703s] -- Checking for module 'OGRE'
+[3.720s] --   Found OGRE, version 1.9.0
+[3.768s] -- Found Ogre Ghadamon (1.9.0)
+[4.021s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[4.033s] -- Looking for OGRE_Paging...
+[4.252s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[4.252s] -- Looking for OGRE_Terrain...
+[4.446s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[4.446s] -- Looking for OGRE_Property...
+[4.642s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[4.642s] -- Looking for OGRE_RTShaderSystem...
+[4.834s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[4.834s] -- Looking for OGRE_Volume...
+[5.003s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[5.003s] -- Looking for OGRE_Overlay...
+[5.167s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
